@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="top"> <h1>Tic-Tac-Toe</h1></div><br>
+   <div class="trybtn"> <form method="POST" action="/restart_game"> <!-- 1 -->
+        <button class="restart-btn" type="submit">Reset</button>
+    </form></div>
+    
+        <p class="message" style="text-align: center;">{{ message }}</p>
+       
+    </div>
+</body>
+</html>
+ 

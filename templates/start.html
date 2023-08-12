@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="top"> <h1>Tic-Tac-Toe<br>
+        <h4>!!!  Get ready to get defeated  !!!</h4>
+
+    </h1></div>
+    <div class="container start-container">
+        <h2>Enter your name : <input type="text" class="textbox"></h2>
+        <form action="/loser_mess" > 
+            <button class="losbtn" type="submit">Submit</button>
+        </form>
+        <p class="message">{{ message }}</p>
+        <!-- <p><h2>Click Below to Start the Game</h2></p> -->
+        <form action="/start_game">
+            <button class="start-btn" type="submit">Start Game</button>
+        </form>
+    </div>
+</body>
+</html>
